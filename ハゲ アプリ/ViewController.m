@@ -16,6 +16,7 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -30,10 +31,7 @@
                            nil];
     [self.interstitial loadRequest:request];
     
-    if ([self.interstitial isReady]) {
-        [self.interstitial presentFromRootViewController:self];
-    }
-    
+
     // Do any additional setup after loading the view.
     
     KariFlag = NO;
@@ -148,6 +146,10 @@
 }
 -(IBAction)karitori{
     if(KariFlag == YES){
+        if ([self.interstitial isReady]) {
+            [self.interstitial presentFromRootViewController:self];
+        }
+        
         KariFlag = NO;
         hageViwe.image = [UIImage imageNamed:@"HG.png"];
         
