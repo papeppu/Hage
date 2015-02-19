@@ -1,25 +1,264 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tanaka.png" translatesAutoresizingMaskIntoConstraints="NO" id="Atr-az-R7P">
+                                <rect key="frame" x="-6" y="-133" width="387" height="872"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="7vt-c0-PL0">
+                                <rect key="frame" x="47" y="319" width="280" height="333"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nc79954.png" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-tZ-cL2">
+                                <rect key="frame" x="0.0" y="531" width="375" height="136"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogf-7i-g9n">
+                                <rect key="frame" x="200" y="33" width="166" height="150"/>
+                                <state key="normal" image="コレクション.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="kore" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cui-FE-ztH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="秒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcp-yD-ACQ">
+                                <rect key="frame" x="312" y="577" width="35" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="残り" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF4-GT-Ftk">
+                                <rect key="frame" x="27" y="571" width="70" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SgE-UT-A0D">
+                                <rect key="frame" x="16" y="15" width="137" height="148"/>
+                                <state key="normal" image="育毛剤.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ikumou" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QH3-HR-a70"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBg-1J-7lW">
+                                <rect key="frame" x="61" y="226" width="232" height="120"/>
+                                <state key="normal" image="叩く.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tataku" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DOe-m9-3lK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cc5-NU-o61">
+                                <rect key="frame" x="237" y="440" width="138" height="135"/>
+                                <state key="normal" image="刈り取り.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="karitori" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8ui-b9-Vwx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="~~~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qip-9j-a1a">
+                                <rect key="frame" x="104" y="575" width="167" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="hageViwe" destination="7vt-c0-PL0" id="CDZ-l9-fb3"/>
+                        <outlet property="koreBtn" destination="Ogf-7i-g9n" id="DA7-RI-QGd"/>
+                        <outlet property="timeLabel" destination="Qip-9j-a1a" id="5Dv-X3-QcW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="176.5" y="290.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pc9-mP-BMs">
+            <objects>
+                <viewController id="vox-TG-qTT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MC1-ZX-GG2"/>
+                        <viewControllerLayoutGuide type="bottom" id="sYI-pL-fJX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dm5-Bf-rWd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hc9-ct-ZhD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="450"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="wZ2-yP-ygS">
+            <objects>
+                <viewController storyboardIdentifier="Second" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QOB-5U-hUb" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rdI-vC-Cl8"/>
+                        <viewControllerLayoutGuide type="bottom" id="7BM-Dr-jUY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KAh-NL-UIq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="54k-Rx-QrY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="cCn-TV-hpi">
+                                <rect key="frame" x="191" y="103" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pjr-2d-kKP">
+                                <rect key="frame" x="279" y="103" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="aJ9-a2-xQz">
+                                <rect key="frame" x="16" y="191" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="a5k-Ff-8n1">
+                                <rect key="frame" x="103" y="191" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="IA8-hr-Qwn">
+                                <rect key="frame" x="191" y="191" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="UEq-uN-dbQ">
+                                <rect key="frame" x="16" y="279" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="ak7-Vf-DQF">
+                                <rect key="frame" x="103" y="279" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="dIK-Fg-ZRZ">
+                                <rect key="frame" x="16" y="372" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="dJK-6j-RId">
+                                <rect key="frame" x="103" y="372" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="5vy-C9-16e">
+                                <rect key="frame" x="191" y="372" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="B28-UR-ifC">
+                                <rect key="frame" x="279" y="372" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="sk7-mc-yBQ">
+                                <rect key="frame" x="16" y="460" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="x8h-Pg-OV9">
+                                <rect key="frame" x="103" y="460" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="qx8-U1-yg3">
+                                <rect key="frame" x="191" y="460" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="HyS-Sq-McR">
+                                <rect key="frame" x="279" y="460" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="kPa-ac-bwC">
+                                <rect key="frame" x="16" y="548" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="rOa-Rw-Pg3">
+                                <rect key="frame" x="103" y="548" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bn8-TV-Bfo">
+                                <rect key="frame" x="191" y="548" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="KH3-zP-2Yy">
+                                <rect key="frame" x="279" y="548" width="80" height="80"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="コレクション" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqU-i5-D0M">
+                                <rect key="frame" x="106" y="37" width="163" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="llm-cj-Eha">
+                                <rect key="frame" x="103" y="103" width="80" height="80"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrW-oa-qxZ">
+                                <rect key="frame" x="296" y="616" width="87" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="flipHorizontal" id="8Bq-tq-329"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="ikT-ke-NVZ">
+                                <rect key="frame" x="279" y="279" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="eRb-2q-dXv">
+                                <rect key="frame" x="16" y="103" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="DyB-u5-txq">
+                                <rect key="frame" x="279" y="191" width="80" height="80"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HG.png" translatesAutoresizingMaskIntoConstraints="NO" id="olk-4V-FWO">
+                                <rect key="frame" x="191" y="279" width="80" height="80"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="image1" destination="eRb-2q-dXv" id="jqI-E5-cfk"/>
+                        <outlet property="image10" destination="ak7-Vf-DQF" id="Duv-DZ-USl"/>
+                        <outlet property="image11" destination="olk-4V-FWO" id="8cc-xk-zMf"/>
+                        <outlet property="image12" destination="ikT-ke-NVZ" id="bWe-51-tow"/>
+                        <outlet property="image13" destination="dIK-Fg-ZRZ" id="LBL-iC-sGs"/>
+                        <outlet property="image14" destination="dJK-6j-RId" id="68l-HW-335"/>
+                        <outlet property="image15" destination="5vy-C9-16e" id="Nlg-Ru-YUc"/>
+                        <outlet property="image16" destination="B28-UR-ifC" id="pjL-v7-74I"/>
+                        <outlet property="image17" destination="sk7-mc-yBQ" id="fNJ-jE-pYf"/>
+                        <outlet property="image18" destination="x8h-Pg-OV9" id="5WD-Af-tan"/>
+                        <outlet property="image19" destination="qx8-U1-yg3" id="uzt-L3-mbL"/>
+                        <outlet property="image2" destination="llm-cj-Eha" id="ryN-EW-hcg"/>
+                        <outlet property="image20" destination="HyS-Sq-McR" id="v9t-6g-Rah"/>
+                        <outlet property="image21" destination="kPa-ac-bwC" id="cfD-MU-N6d"/>
+                        <outlet property="image22" destination="rOa-Rw-Pg3" id="t0d-fW-yhA"/>
+                        <outlet property="image23" destination="Bn8-TV-Bfo" id="stp-qx-9J4"/>
+                        <outlet property="image24" destination="KH3-zP-2Yy" id="Snv-xn-SYo"/>
+                        <outlet property="image3" destination="cCn-TV-hpi" id="RAO-1Q-okd"/>
+                        <outlet property="image4" destination="Pjr-2d-kKP" id="UbP-wg-UdX"/>
+                        <outlet property="image5" destination="aJ9-a2-xQz" id="m31-iI-bfR"/>
+                        <outlet property="image6" destination="a5k-Ff-8n1" id="X3D-tp-yHz"/>
+                        <outlet property="image7" destination="IA8-hr-Qwn" id="Z99-uT-ouf"/>
+                        <outlet property="image8" destination="DyB-u5-txq" id="Rc0-L6-AOB"/>
+                        <outlet property="image9" destination="UEq-uN-dbQ" id="F7r-dy-NUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SgC-Ki-aj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926.25" y="290.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="HG.png" width="1000" height="1000"/>
+        <image name="images.jpg" width="85" height="85"/>
+        <image name="nc79954.png" width="640" height="259"/>
+        <image name="tanaka.png" width="2231" height="3264"/>
+        <image name="コレクション.png" width="500" height="500"/>
+        <image name="刈り取り.png" width="1947" height="2042"/>
+        <image name="叩く.png" width="1237" height="596"/>
+        <image name="育毛剤.png" width="2006" height="2153"/>
+    </resources>
 </document>

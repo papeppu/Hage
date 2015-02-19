@@ -10,6 +10,22 @@
 
 @interface ViewController : UIViewController
 
+{
+    BOOL KariFlag;
+    int countDown;
+    int i;
+    int number;
+    IBOutlet UILabel *timeLabel;
+    NSTimer *timer;
+    IBOutlet UIImageView *hageViwe;
+    NSString *imagePath[24];
+    NSString *imagename[24];
+    IBOutlet UIButton *koreBtn;
+}
+
+-(IBAction)ikumou;
+-(IBAction)karitori;
+-(IBAction)kore;
+-(IBAction)tataku;
 
 @end
-
