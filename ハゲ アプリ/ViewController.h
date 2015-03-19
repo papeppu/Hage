@@ -12,6 +12,7 @@
 
 {
     BOOL KariFlag;
+    BOOL Karimake;
     int countDown;
     int i;
     int number;

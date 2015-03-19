@@ -17,6 +17,47 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    UIStoryboard *storyboard;
+    // StoryBoardの名称設定用
+    NSString * storyBoardName;
+    
+    // 機種の取得
+    NSString *modelname = [[UIDevice currentDevice] model];
+    
+    // iPadかどうか判断する
+    if ( ![modelname hasPrefix:@"iPad"] ) {
+        
+        // Windowスクリーンのサイズを取得
+        CGRect r = [[UIScreen mainScreen] bounds];
+        // 縦の長さが480の場合、古いiPhoneだと判定
+        if(r.size.height == 480)
+        {
+            storyBoardName = @"3.5-Storyboard";
+        }
+        else
+        {
+            storyBoardName = @"Main";
+        }
+    }
+    else
+    {
+        storyBoardName = @"3.5-Storyboard";
+    }
+    
+    // StoryBoardのインスタンス化
+    storyboard = [UIStoryboard storyboardWithName:storyBoardName bundle:nil];
+    
+    // 画面の生成
+    UIViewController *mainViewController = [storyboard instantiateInitialViewController];
+    
+    // ルートウィンドウにひっつける
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = mainViewController;
+    [self.window makeKeyAndVisible];
+
+    
+    
+    
     return YES;
 }
 

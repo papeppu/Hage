@@ -88,20 +88,25 @@
     imagename[23]=@"リアルハゲ";
     
 
-    }
+}
 
 
 -(IBAction)ikumou{
     
     
-    if (KariFlag == YES) {
+    if(KariFlag == YES) {
         UIAlertView *alert2 =
         [[UIAlertView alloc] initWithTitle:@"髪の毛が泣いています" message:@"髪の毛を刈り取ってください"
                                   delegate:self cancelButtonTitle:@"了解！" otherButtonTitles:nil];
         [alert2 show];
         
-    }
-    if (KariFlag == NO) {
+    }else if(Karimake == YES){
+        UIAlertView *alert4 =
+        [[UIAlertView alloc] initWithTitle:@"髪の毛が泣いています" message:@"髪の毛が生えてからにしてください"
+                                  delegate:self cancelButtonTitle:@"了解！" otherButtonTitles:nil];
+        [alert4 show];
+
+    }else if(KariFlag == NO) {
         timer = [NSTimer
                  scheduledTimerWithTimeInterval:1
                  target: self
@@ -109,8 +114,7 @@
                  userInfo:nil
                  repeats:YES];
         countDown = 120; //　設定時間「60秒」
-        
-        KariFlag = YES;
+        Karimake = YES;
     }
 }
 
@@ -123,6 +127,11 @@
         [[UIAlertView alloc] initWithTitle:@"髪の毛が泣いています" message:@"髪の毛を刈り取ってください"
                                   delegate:self cancelButtonTitle:@"了解！" otherButtonTitles:nil];
         [alert2 show];
+    }else if(Karimake == YES){
+        UIAlertView *alert5 =
+        [[UIAlertView alloc] initWithTitle:@"髪の毛が泣いています" message:@"髪の毛が生えてからにしてください"
+                                  delegate:self cancelButtonTitle:@"了解！" otherButtonTitles:nil];
+        [alert5 show];
     }else{
         SecondViewController *ViewController2 = [self.storyboard instantiateViewControllerWithIdentifier:@"Second"];
         [self presentViewController:ViewController2 animated:YES completion:nil];
@@ -136,12 +145,16 @@
         [timer invalidate]; // タイマーを停止する
         i = rand()%24;
         hageViwe.image = [UIImage imageNamed:imagePath[i]];
-        
+        KariFlag = YES;
+        Karimake = NO;
     }
 }
 -(IBAction)tataku{
     if(countDown > 10){
     countDown = countDown - 1;
+    countDown--;
+    [timeLabel setText:[NSString stringWithFormat:@"%d",countDown]]; // ラベルに時間を表示
+
     }
 }
 -(IBAction)karitori{
@@ -162,8 +175,14 @@
         [userDefaults setBool:YES forKey:[NSString stringWithFormat:@"%d",i]];
         [userDefaults synchronize];
         
+    }else if (KariFlag == NO) {
+        UIAlertView *alert2 =
+        [[UIAlertView alloc] initWithTitle:@"頭皮が泣いています" message:@"髪の毛を生やしてあげてください。"
+                                  delegate:self cancelButtonTitle:@"了解！" otherButtonTitles:nil];
+        [alert2 show];
     }
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -40,6 +40,8 @@
 		DA7477B81A273BC600D21F97 /* taiyaki.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7477A81A273BC600D21F97 /* taiyaki.png */; };
 		DA7477B91A273BC600D21F97 /* tya.png in Resources */ = {isa = PBXBuildFile; fileRef = DA7477A91A273BC600D21F97 /* tya.png */; };
 		DA9C82F61A272DDC006BDBAE /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA9C82F51A272DDC006BDBAE /* images.jpg */; };
+		DACE9BF21AAEE7D000FE2233 /* Defaults in Resources */ = {isa = PBXBuildFile; fileRef = DACE9BF11AAEE7D000FE2233 /* Defaults */; };
+		DACE9BF41AAEE7F000FE2233 /* 3.5-Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DACE9BF31AAEE7F000FE2233 /* 3.5-Storyboard.storyboard */; };
 		DADDA7A51A7A78CA00EB33C6 /* 叩く.png in Resources */ = {isa = PBXBuildFile; fileRef = DADDA7A41A7A78CA00EB33C6 /* 叩く.png */; };
 		DAEF3CCB1A1DDC5100877B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEF3CCA1A1DDC5100877B67 /* main.m */; };
 		DAEF3CCE1A1DDC5100877B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEF3CCD1A1DDC5100877B67 /* AppDelegate.m */; };
@@ -98,6 +100,8 @@
 		DA7477A81A273BC600D21F97 /* taiyaki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = taiyaki.png; path = "../../../Desktop/髪型/taiyaki.png"; sourceTree = "<group>"; };
 		DA7477A91A273BC600D21F97 /* tya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tya.png; path = "../../../Desktop/髪型/tya.png"; sourceTree = "<group>"; };
 		DA9C82F51A272DDC006BDBAE /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpg; path = ../../../Desktop/images.jpg; sourceTree = "<group>"; };
+		DACE9BF11AAEE7D000FE2233 /* Defaults */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Defaults; sourceTree = "<group>"; };
+		DACE9BF31AAEE7F000FE2233 /* 3.5-Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "3.5-Storyboard.storyboard"; sourceTree = "<group>"; };
 		DADDA7A41A7A78CA00EB33C6 /* 叩く.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "叩く.png"; sourceTree = "<group>"; };
 		DAEF3CC51A1DDC5100877B67 /* ハゲ アプリ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ハゲ アプリ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEF3CC91A1DDC5100877B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 				DAEF3CCD1A1DDC5100877B67 /* AppDelegate.m */,
 				DAEF3CF21A1DDF7D00877B67 /* ViewController.h */,
 				DAEF3CF31A1DDF7D00877B67 /* ViewController.m */,
+				DACE9BF31AAEE7F000FE2233 /* 3.5-Storyboard.storyboard */,
 				DAEF3CD21A1DDC5100877B67 /* Main.storyboard */,
 				DAEF3CD51A1DDC5100877B67 /* Images.xcassets */,
 				DAEF3CC81A1DDC5100877B67 /* Supporting Files */,
@@ -183,6 +188,7 @@
 		DAEF3CC81A1DDC5100877B67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DACE9BF11AAEE7D000FE2233 /* Defaults */,
 				DAFEF32F1A8CC11C0076DA38 /* icon.png */,
 				DA211BED1A839E4B00775D09 /* アプ.png */,
 				DADDA7A41A7A78CA00EB33C6 /* 叩く.png */,
@@ -339,10 +345,12 @@
 				DA7477AE1A273BC600D21F97 /* iPhone.png in Resources */,
 				DA720B901A71006B00EA8112 /* nc79954.png in Resources */,
 				DA2F93191A7A41080008497D /* 育毛剤.png in Resources */,
+				DACE9BF21AAEE7D000FE2233 /* Defaults in Resources */,
 				DA7477B71A273BC600D21F97 /* rong.png in Resources */,
 				DA3469431A67D8F700480B13 /* sabo.png in Resources */,
 				DA7477AB1A273BC600D21F97 /* atama.png in Resources */,
 				DA9C82F61A272DDC006BDBAE /* images.jpg in Resources */,
+				DACE9BF41AAEE7F000FE2233 /* 3.5-Storyboard.storyboard in Resources */,
 				DA7477AA1A273BC600D21F97 /* afuro.png in Resources */,
 				DA7477B41A273BC600D21F97 /* nomaru.png in Resources */,
 				DA7477B91A273BC600D21F97 /* tya.png in Resources */,
@@ -491,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -526,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -538,6 +546,7 @@
 			baseConfigurationReference = BF16A9B96B10FC756A2D7FF7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ハゲ アプリ/Info.plist";
@@ -545,6 +554,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -553,6 +563,7 @@
 			baseConfigurationReference = 19F94B219317441A72FFB827 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ハゲ アプリ/Info.plist";
@@ -560,6 +571,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
